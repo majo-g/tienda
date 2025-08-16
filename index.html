@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda Online - Banner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="container topbar-grid">
+        <div class="logo">
+          <img src="./imagenes/logo.png" alt="Logo Tienda Online">
+        </div>
+
+        <div class="search-wrap">
+          <input class="search-input" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+          <button class="search-btn" aria-label="Buscar">
+            🔍
+          </button>
+        </div>
+
+        <div class="actions">
+          <a class="txt-link">Inicia sesión o regístrate</a>
+          <button class="icon-btn" aria-label="Favoritos">♡</button>
+          <button class="icon-btn" aria-label="Carrito">🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container nav-links">
+        <a href="#">INICIO</a>
+        <a href="#">TIENDA</a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">BLOG</a>
+        <a href="#">AIRDOTS</a>
+        <a href="#">APPLE WATCH</a>
+        <a href="#">FUNDAS</a>
+        <a href="#">AUDÍFONOS</a>
+        <a href="#">SMART WATCH</a>
+        <a href="#">CONTACTO</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="container banner-grid">
+      <div class="banner-text">
+        <span class="tag">SMARTWATCH</span>
+        <h1>Disfruta la vida<br>en movimiento</h1>
+        <button class="btn-oferta">
+          <img src="./imagenes/canasta.png" alt="" class="cart-icon">
+          OBTENER OFERTA
+        </button>
+      </div>
+
+      <div class="banner-image">
+        <img src="./imagenes/reloj.png" alt="Smartwatch">
+      </div>
+    </div>
+  </section>
+  <section class="categorias">
+        <h2>Categorías</h2>
+        <div class="grid-categorias">
+            <div class="categoria">
+                <img src="./imagenes/audifonos.png" alt="Airdots">
+                <p>Airdots</p>
+            </div>
+            <div class="categoria">
+                <img src="./imagenes/audiculares.png" alt="Auriculares">
+                <p>Auriculares</p>
+            </div>
+            <div class="categoria">
+                <img src="./imagenes/smartwatch.png" alt="Reloj Inteligente">
+                <p>Reloj Inteligente</p>
+            </div>
+            <div class="categoria">
+                <img src="./imagenes/apple.png" alt="Apple Watch">
+                <p>Apple Watch</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lanzamientos">
+        <h2>Lanzamientos</h2>
+        <div class="grid-productos">
+            <div class="producto">
+                <img src="https://http2.mlstatic.com/D_Q_NP_804784-MLU78570144534_082024-O.webp" alt="Mini Air Dots">
+                <h3>Mini Air Dots sin cable coloridos</h3>
+                <p class="precio-antiguo">$150.000</p>
+                <p class="precio">$100.000</p>
+                <button>Ver opciones</button>
+            </div>
+            <div class="producto">
+                <img src="https://sumerlabs.com/default/image-tool-lambda?new-width=500&new-height=500&new-quality=50&url-image=https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos/6c0dc8a777ffba6fe3e02c9765f790a9/scaled_image_picker4939228167673271045.jpg?alt=media&token=62084812-9fdf-4be5-8780-df0903276a2d" alt="Xiaomi Redmi">
+                <h3>Xiaomi Redmi Airdots 2</h3>
+                <p class="precio-antiguo">$200.000</p>
+                <p class="precio">$150.000</p>
+                <button>Ver opciones</button>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNUoQ2g9WCNLuqDEKprJFtQewR9S6rsA6N3bKYXYxNRhULHrGx" alt="Apple Watch">
+                <h3>Apple Watch Series 5 LTE</h3>
+                <p class="precio-antiguo">$649.000</p>
+                <p class="precio">$539.000</p>
+                <button>Ver opciones</button>
+            </div>
+            <div class="producto">
+                <img src="https://stylewatch.vtexassets.com/arquivos/ids/280672/COP20RG.jpg.jpg?v=638815560987470000" alt="SQR P18">
+                <h3>Smart Watch SQR P18</h3>
+                <p class="precio-antiguo">$500.000</p>
+                <p class="precio">$250.000</p>
+                <button>Ver opciones</button>
+            </div>
+        </div>
+    </section>
+<style>
+
+    :root{
+  --purple: #6f2fb9;
+  --dark-purple: #5b2a86;
+  --orange: #ff9800;
+  --white: #ffffff;
+  --maxw: 1200px;
+  --radius: 12px;
+  --container-pad: 20px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, sans-serif;
+  color:#222;
+  background:#fff;
+}
+
+.container{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.topbar{
+  background: var(--purple);
+  color: var(--white);
+  font-size: 14px;
+}
+.topbar-grid{
+  display: grid;
+  grid-template-columns: 180px 1fr 220px;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.logo img{
+  height: 36px;
+  display:block;
+}
+
+.search-wrap{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  justify-self:center;
+  width:100%;
+  max-width:720px;
+}
+.search-input{
+  width:100%;
+  padding:12px 16px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.search-btn{
+  margin-left:-48px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.actions{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:10px;
+  color:var(--white);
+}
+.txt-link{
+  color:var(--white);
+  opacity:0.95;
+  margin-right:8px;
+  text-decoration:none;
+  cursor:pointer;
+}
+.icon-btn{
+  background: rgba(255,255,255,0.12);
+  border: none;
+  padding:8px 12px;
+  border-radius: 8px;
+  color:var(--white);
+  cursor:pointer;
+}
+
+.navbar{
+  background: #fff;
+  border-bottom: 4px solid rgba(0,0,0,0.03);
+}
+.nav-links{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  padding:10px 0;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:13px;
+  letter-spacing:0.6px;
+  padding:6px 8px;
+}
+
+.banner{
+  background-color: var(--orange);
+  position: relative;
+  overflow: hidden;
+  padding: 36px 0 70px;
+  color: white;
+}
+
+.banner::before{
+  content: "SMARTWATCH SMARTWATCH SMARTWATCH SMARTWATCH SMARTWATCH";
+  position: absolute;
+  right: -40px;
+  top: 30%;
+  font-size: 96px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.08);
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translateY(-10%);
+  letter-spacing: 6px;
+}
+
+
+.banner-grid{
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0 40px;
+}
+
+.banner-text{
+  max-width: 640px;
+}
+.tag{
+  display:inline-block;
+  background: var(--dark-purple);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 26px;
+  font-weight:700;
+  font-size: 13px;
+}
+.banner-text h1{
+  margin: 18px 0 22px;
+  font-size: 48px;
+  line-height: 1.02;
+  color: #fff;
+  font-weight:800;
+}
+
+.btn-oferta{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  background: #ffcf3b;
+  color: #4b3b00;
+  border:none;
+  padding: 12px 18px;
+  border-radius: 24px;
+  font-weight:700;
+  cursor:pointer;
+}
+.cart-icon{
+  height:58px;
+  width:58px;
+}
+
+.banner-image{
+  justify-self:end;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.banner-image img{
+  max-width: 420px;
+  width:280px;
+  display:block;
+  transform: translateX(18px);
+  filter: drop-shadow(0 18px 30px rgba(0,0,0,0.35));
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.categoria {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.categoria img {
+    width: 100px;
+    height: auto;
+}
+
+.categoria:hover {
+    background: #f7f7f7;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.precio-antiguo {
+    text-decoration: line-through;
+    color: gray;
+    margin: 5px 0;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8e44ad;
+    margin: 5px 0;
+}
+
+button {
+    background: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #732d91;
+}
+
+</style>
+</body>
+</html>
