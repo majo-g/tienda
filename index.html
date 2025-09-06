@@ -12,7 +12,7 @@
     <div class="topbar">
       <div class="container topbar-grid">
         <div class="logo">
-          <img src="./imagenes/logo.png" alt="Logo Tienda Online">
+          <img src="./img/logo.png" alt="Logo Tienda Online">
         </div>
 
         <div class="search-wrap">
@@ -50,12 +50,12 @@
         <span class="tag">SMARTWATCH</span>
         <h1>Disfruta la vida<br>en movimiento</h1>
         <button class="btn-oferta">
-          <img src="./imagenes/canasta.png" alt="Canasta" class="cart-icon">
+          <img src="./img/canasta.png" alt="Canasta" class="cart-icon">
           OBTENER OFERTA
         </button>
       </div>
       <div class="banner-image">
-        <img src="./imagenes/reloj.png" alt="Smartwatch">
+        <img src="./img/reloj.png" alt="Smartwatch">
       </div>
     </div>
   </section>
@@ -64,19 +64,19 @@
     <h2>Categorías</h2>
     <div class="grid-categorias">
       <div class="categoria">
-        <img src="./imagenes/audifonos.png" alt="Airdots">
+        <img src="./img/audifonos.png" alt="Airdots">
         <p>Airdots</p>
       </div>
       <div class="categoria">
-        <img src="./imagenes/audiculares.png" alt="Auriculares">
+        <img src="./img/audiculares.png" alt="Auriculares">
         <p>Auriculares</p>
       </div>
       <div class="categoria">
-        <img src="./imagenes/smartwatch.png" alt="Reloj Inteligente">
+        <img src="./img/smartwatch.png" alt="Reloj Inteligente">
         <p>Reloj Inteligente</p>
       </div>
       <div class="categoria">
-        <img src="./imagenes/apple.png" alt="Apple Watch">
+        <img src="./img/apple.png" alt="Apple Watch">
         <p>Apple Watch</p>
       </div>
     </div>
@@ -118,12 +118,91 @@
       </div>
     </div>
     </section>
+    <section class="promo">
+  <div class="container promo-content">
+    <div class="promo-text">
+      <span class="badge">MEGA PROMOCIÓN</span>
+      <h2>TODA LA TIENDA<br><strong>CON HASTA 50% OFF</strong></h2>
+    </div>
+    <div class="promo-products">
+      <img src="img/reloj.png" alt="Smartwatch">
+      <img src="img/airpos rosados.png" alt="Airpods">
+      <img src="img/audifonosAzules.png" alt="Audífonos">
+      <img src="img/pulsera.png" alt="Apple Watch">
+    </div>
+  </div>
+</section>
+<section class="ofertas">
+  <h2>Productos en Oferta</h2>
+  <div class="grid-productos">
+    <div class="producto">
+      <img src="https://http2.mlstatic.com/D_Q_NP_804784-MLU78570144534_082024-O.webp" alt="Mini Air Dots">
+      <h3>Mini Air Dots sin cable coloridos</h3>
+      <p class="precio-antiguo">$150.000</p>
+      <p class="precio">$100.000</p>
+      <button>Ver opciones</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://sumerlabs.com/default/image-tool-lambda?new-width=500&new-height=500&new-quality=50&url-image=https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos/6c0dc8a777ffba6fe3e02c9765f790a9/scaled_image_picker4939228167673271045.jpg" alt="Xiaomi Redmi">
+      <h3>Xiaomi Redmi Airdots 2</h3>
+      <p class="precio-antiguo">$200.000</p>
+      <p class="precio">$150.000</p>
+      <button>Ver opciones</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://stylewatch.vtexassets.com/arquivos/ids/280672/COP20RG.jpg.jpg?v=638815560987470000" alt="SQR P18">
+      <h3>Smart Watch SQR P18</h3>
+      <p class="precio-antiguo">$350.000</p>
+      <p class="precio">$250.000</p>
+      <button>Ver opciones</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_800068-MLU77418719898_072024-O.webp" alt="Smartwatch Colmi">
+      <h3>Smartwatch para teléfono Xiaomi Full Touch Fitness Tracker</h3>
+      <p class="precio-antiguo">$350.000</p>
+      <p class="precio">$310.000</p>
+      <button>Ver opciones</button>
+    </div>
+  </div>
+</section>
+<section class="beneficios-contenedor">
+  <div class="beneficios">
+    <div class="beneficio">
+      <img src="./img/envioGratis.png" alt="Envío gratis">
+      <h3>Envío gratis</h3>
+      <p>Para todo el país</p>
+    </div>
+
+    <div class="beneficio">
+      <img src="./img/credito.png" alt="Pago en cuotas">
+      <h3>Paga en cuotas</h3>
+      <p>Hasta 12x</p>
+    </div>
+
+    <div class="beneficio">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Compra segura">
+      <h3>Compra segura</h3>
+      <p>Tus datos protegidos</p>
+    </div>
+
+    <div class="beneficio">
+      <img src="https://cdn-icons-png.flaticon.com/512/3503/3503786.png" alt="Pedido rastreado">
+      <h3>Pedido rastreado</h3>
+      <p>Código de seguimiento</p>
+    </div>
+  </div>
+</section>
+
 <style>
 
-  :root {
+ :root {
   --purple: #6f2fb9;
   --dark-purple: #5b2a86;
   --orange: #ff9800;
+  --yellow: #ffcf3b;
   --white: #ffffff;
   --maxw: 1200px;
   --container-pad: 20px;
@@ -141,9 +220,9 @@ body {
 }
 
 .container {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 var(--container-pad);
+  max-width: 1200px;   
+  margin: 0 auto;      
+  padding: 0 20px;    
 }
 
 .topbar {
@@ -156,14 +235,13 @@ body {
   grid-template-columns: 180px 1fr 220px;
   align-items: center;
   gap: 16px;
-  padding: 12px 0;
+  padding: 10px 0;
 }
 .logo img {
-  height: 36px;
+  height: 40px;
   display: block;
 }
 
-/* Buscar */
 .search-wrap {
   display: flex;
   align-items: center;
@@ -174,7 +252,7 @@ body {
 }
 .search-input {
   flex: 1;
-  padding: 12px 16px;
+  padding: 10px 16px;
   border-radius: 24px;
   border: none;
   font-size: 15px;
@@ -197,37 +275,39 @@ body {
   color: var(--white);
   opacity: 0.95;
   text-decoration: none;
+  font-size: 13px;
 }
 .icon-btn {
   background: rgba(255,255,255,0.15);
   border: none;
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 50%;
   color: var(--white);
   cursor: pointer;
+  font-size: 16px;
 }
 
 .navbar {
   background: #fff;
-  border-bottom: 4px solid rgba(0,0,0,0.03);
+  border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 .nav-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   padding: 12px 0;
 }
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-size: 13px;
-  padding: 6px 8px;
+  font-weight: 600;
 }
 
 .banner {
   background: var(--orange);
-  padding: 40px 0;
+  padding: 50px 0;
   color: white;
 }
 .banner-grid {
@@ -235,6 +315,9 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .banner-text .tag {
   display: inline-block;
@@ -246,25 +329,30 @@ body {
 }
 .banner-text h1 {
   margin: 20px 0;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 800;
+  line-height: 1.2;
 }
 .btn-oferta {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #ffcf3b;
+  background: var(--yellow);
   color: #4b3b00;
   border: none;
-  padding: 12px 18px;
-  border-radius: 24px;
+  padding: 14px 20px;
+  border-radius: 30px;
   font-weight: 700;
   cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.btn-oferta:hover {
+  background: #ffd84a;
 }
 .cart-icon {
-  height: 40px;
+  height: 28px;
 }
-
 .banner-image img {
   width: 100%;
   max-width: 400px;
@@ -274,72 +362,184 @@ body {
 
 h2 {
   text-align: center;
-  margin: 30px 0 20px;
+  margin: 40px 0 20px;
 }
 .grid-categorias {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 900px;
+  max-width: 1200px; 
   margin: auto;
+  padding: 0 20px;
 }
 .categoria {
   text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 20px;
   transition: 0.3s;
 }
 .categoria img {
   width: 100px;
   height: auto;
 }
+.categoria p {
+  margin-top: 10px;
+  font-weight: 600;
+}
 .categoria:hover {
-  background: #f7f7f7;
+  transform: translateY(-5px);
 }
 
 .grid-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1100px;
+  max-width: 1200px; 
   margin: auto;
   padding: 20px;
 }
 .producto {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 15px;
   text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: 0.3s;
+}
+.producto:hover {
+  transform: translateY(-5px);
 }
 .producto img {
   width: 100%;
   border-radius: 8px;
 }
+.producto h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  height: 40px;
+}
 .precio-antiguo {
   text-decoration: line-through;
   color: gray;
   margin: 5px 0;
+  font-size: 13px;
 }
 .precio {
   font-size: 18px;
   font-weight: bold;
-  color: #8e44ad;
+  color: var(--purple);
   margin: 5px 0;
 }
 button {
-  background: #8e44ad;
+  background: var(--purple);
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 button:hover {
   background: #732d91;
 }
+
+.promo {
+  background: var(--purple);
+  color: #fff;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: var(--maxw);
+}
+
+.promo::before {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.05);
+  white-space: nowrap;
+  z-index: 0;
+}
+
+.promo .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  text-align: left;
+}
+
+.promo-text {
+  margin-bottom: 20px;
+}
+
+.promo-products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; 
+  width: 100%;            
+  margin-top: 10px;
+}
+
+.promo-products img {
+  max-height: 220px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.promo-products img:hover {
+  transform: scale(1.05);
+}
+
+.ofertas {
+  margin-top: 40px;
+}
+
+.ofertas h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.beneficios-contenedor {
+  max-width: 1200px;   
+  margin: 0 auto;    
+  padding: 40px 20px;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.beneficio {
+  flex: 1;
+  text-align: center;
+  background-color: #5a189a; 
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.beneficio img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+}
+
 </style>
 </body>
 </html>
-
